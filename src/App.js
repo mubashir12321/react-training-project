@@ -12,7 +12,7 @@ class App extends Component {
 
         ],
       showPersons:true
-  }
+  };
 
   deletePersonHandler = (personIndex)=>{
     // const persons=this.state.persons;
@@ -20,7 +20,7 @@ class App extends Component {
     persons.splice(personIndex,1);
     this.setState({persons:persons})
 
-  }
+  };
   nameChangedHandler = (event,id) =>{
       const personIndex = this.state.persons.findIndex(p =>{
         return p.id ===id;
@@ -33,12 +33,12 @@ class App extends Component {
       persons[personIndex] = person;
 
       this.setState({persons: persons})
-  }
+  };
   togglePersonsHandler = () =>{
     const doesShow = this.state.showPersons;
     this.setState({showPersons: !doesShow});
 
-  }
+  };
   render() {
     const style = {
         backgroundColor:'green',
