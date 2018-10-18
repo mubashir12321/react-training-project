@@ -62,11 +62,15 @@ class App extends Component {
            btnClass = classes.Red;
     }
     let assignedClasses = [];
+
     if(this.state.persons.length<=2){
         assignedClasses.push(classes.red);//clases=['red']
     }
       if(this.state.persons.length<=1){
           assignedClasses.push(classes.bold);//clases=['red','bold']
+      }
+      if(this.state.persons.length<1){
+          btnClass = classes.App.button;//clases=['red','bold']
       }
     return (
 

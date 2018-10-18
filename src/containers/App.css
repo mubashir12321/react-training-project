@@ -17,7 +17,7 @@
   background-color: green;
   font: inherit;
   color: white;
-  cursor: zoom-in;
+  cursor: pointer;
 }
 .App button:hover{
   background-color: lightgreen;
